@@ -89,12 +89,16 @@
 
   /* ── Main card ── */
   .card {
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    padding: 0 24px;
-    animation: fadeIn 1.4s ease both;
-  }
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 0 24px;
+  animation: fadeIn 1.4s ease both;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px; /* ← أضف الـ margin ده */
+}
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(28px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -187,6 +191,7 @@
   /* ── Tagline ── */
   .tagline {
     margin-top: 26px;
+    margin-bottom: 8px;
     font-size: clamp(0.72rem, 1.8vw, 0.92rem);
     letter-spacing: 0.32em;
     font-weight: 300;
@@ -247,7 +252,7 @@
   .notify-form {
     display: flex;
     gap: 0;
-    margin-top: 38px;
+    margin-top: 50px;
     max-width: 400px;
     width: 100%;
     border-radius: 50px;
@@ -442,6 +447,8 @@
 </div>
 
 <div class="footer">© 2026 Voyixa.net — All rights reserved To Digital Creation Studio</div>
+
+
 
 <script>
   // ── Logo fallback to SVG text ──
